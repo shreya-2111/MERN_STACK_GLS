@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <button type="button" onClick="arrayES6Fun('map')">map</button>
+        <button type="button" onClick="arrayES6Fun('filter')">filter</button>
+        <button type="button" onClick="arrayES6Fun('find')">find</button>
+        <button type="button" onClick="arrayES6Fun('findindex')">findindex</button>
+        <button type="button" onClick="arrayES6Fun('reduce')">reduce</button>
+        <p id="result"></p>
+        
+        <script>
+            let arr = [2,3,4,5,6,7,8]
+            console.log(arr);
+            let ArrayES6Fun = (arg) => {
+            let res = document.getElementById("result")
+            if(arg=="foreach")
+            {
+                arr.forEach((val,index)=>{
+                    res.innerHTML += `index= ${index} and value =${val} <br>`
+                })
+            }
+            else if(arg=="map"){
+               // let arr1 = arr.map((val,i)=>{return val*2})
+               // let arr1 = arr.map((val,i)=>{val*2})
+               // let arr1 = arr.map((val.i)=>`<h1>${val*2}</h1>`)
+               let arr1 = arr.map((val,i)=>Math.sqrt(val))
+               res.innerHTML = `${arr} <br> ${arr1}`
+            }
+            else if(arg=="filter"){
+                //let arr1 = arr.filter((val,i)=>val>2)
+                let arr1 = arr.filter((val,i)=> !5)
+                res.innerHTML=arr1
+            }
+            else if(arg=="find"){
+                res.innerHTML = arr.find((val)=>val==3)
+                // if val==10 => return 10 otherwise undefined
+            }
+            else if(arg=="findindex"){
+                res.innerHTML = arr.findIndex((val)=>val==13)
+                //if val ==3 => return of 3 otherwise -1
+            }
+            else if(arg=="reduce"){
+                let total = arr.reduce((prev,curr)=>{return.prev+curr})
+                res.innerHTML = `${arr} and total = ${total}`
+            }
+        }
+        </script>
+    </body>
+</html>

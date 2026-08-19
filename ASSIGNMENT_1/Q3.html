@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area of Circle</title>
+</head>
+<body>
+
+<h2>Area and Circumference of Circle</h2>
+
+<input type="number" id="radius" placeholder="Enter Radius">
+
+<button onclick="calculateCircle()">Calculate</button>
+
+<script>
+
+function calculateCircle() {
+
+    const PI = 3.14;
+
+    let radius = Number(document.getElementById("radius").value);
+
+    let area = PI * radius * radius;
+
+    let circumference = 2 * PI * radius;
+
+    alert("Area = " + area + "\nCircumference = " + circumference);
+
+}
+
+</script>
+
+</body>
+</html>

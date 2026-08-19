@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Palindrome</title>
+</head>
+<body>
+
+<script>
+
+function filterPalindrome(wordArray) {
+
+    let palindromeArray = [];
+
+    for (let i = 0; i < wordArray.length; i++) {
+
+        let currentWord = wordArray[i];
+        let reversedWord = currentWord.split("").reverse().join("");
+
+        if (currentWord === reversedWord) {
+            palindromeArray.push(currentWord);
+        }
+
+    }
+
+    return palindromeArray;
+}
+
+let words = ["madam", "racecar", "apple", "level", "hello"];
+
+console.log(filterPalindrome(words));
+
+</script>
+
+</body>
+</html>

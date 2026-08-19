@@ -1,0 +1,52 @@
+parseInt() , parseFloat()
+
+""12.3 => 12.3
+"12" => 12
+
+number object
+
+var vs let (ES6)
+
+dynamically typed vs statically typed
+loosly coupled vs strongly coupled
+
+datatypes :-
+number
+boolean
+null
+undefined
+string
+object - array, string , date, math, boolean, regexp etc..
+
+find type of variable - typeof()
+
+in js variable declare internally its known as HOISTING
+
+block scope = {} (let variable)
+
+function scope = var variable
+
+
+TASK - 
+1. what will be the converted value of textbox it is empty (not assigned any value) - 
+    a. if textbox is wrapped with parseInt
+    b. if textbox is wrapped with number
+
+2. null vs undefined
+
+3. input type = image and img tag
+
+function-
+1 regular
+2 function expression 
+3 arrow funciton
+
+operations - 
+1. +, -, *,/, %,  **
+2. <, >, <=, >=, == ,!=, === ,!==
+3. =, +=, -=, *= , etc.
+4. && ,||, !
+5. ternary () [ ? : ]
+6. ++, --
+7. nullish coealsing operator
+8. typeof , instaceof

@@ -1,0 +1,55 @@
+Absolutely. The easiest way to understand them is:
+
+Git = a tool that tracks changes in your code.
+GitHub = a website/platform where you can store Git projects online and collaborate with others.
+Think of Git like a “save history” for your code
+
+Imagine you're writing a project:
+
+My Project
+   ↓
+Version 1: Created homepage
+   ↓
+Version 2: Added login
+   ↓
+Version 3: Fixed a bug
+   ↓
+Version 4: Added dark mode
+
+
+Git remembers these versions. If you break something, you can go back and see what changed.
+
+GitHub is like Google Drive for Git projects
+
+With GitHub, you can:
+
+Store your projects online
+Back up your code
+Share projects with others
+Work with other developers
+See who changed what
+Contribute to other people's projects
+
+A project stored on GitHub is commonly called a repository (repo).
+
+The 5 Git concepts I'd learn first
+Concept	Simple meaning
+Repository	Your project tracked by Git
+Commit	A saved checkpoint
+Branch	A separate version/work area
+Merge	Combine changes together
+Push / Pull	Send changes to / get changes from GitHub
+
+For example:
+
+Your computer
+     │
+     │ git push
+     ↓
+   GitHub
+     │
+     │ git pull
+     ↓
+Your computer
+
+A good learning path

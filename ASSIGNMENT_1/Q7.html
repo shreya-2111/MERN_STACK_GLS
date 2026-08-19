@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Number in Range</title>
+</head>
+<body>
+
+<script>
+
+function hasPrimeNumber(startNumber, endNumber) {
+
+    for (let currentNumber = startNumber; currentNumber <= endNumber; currentNumber++) {
+
+        let isPrime = true;
+
+        if (currentNumber < 2) {
+            isPrime = false;
+        }
+
+        for (let divisor = 2; divisor < currentNumber; divisor++) {
+
+            if (currentNumber % divisor == 0) {
+                isPrime = false;
+                break;
+            }
+
+        }
+
+        if (isPrime) {
+            return true;
+        }
+
+    }
+
+    return false;
+
+}
+
+document.write(hasPrimeNumber(10, 15));
+document.write("<br>");
+document.write(hasPrimeNumber(8, 10));
+
+</script>
+
+</body>
+</html>

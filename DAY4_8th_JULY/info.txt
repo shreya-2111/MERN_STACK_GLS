@@ -1,0 +1,16 @@
+Memory diagram in c progamming with 1-2 line description
+
+string-
+let str = "hello" //string
+let str1 = new string(hello world) // string object
+strinmg is nothing but aray also
+
+split - hello world  welcome to gls =>   ["hello","world","welcome","to","gls"]
+
+email string mese sirf name print not displat @gmail.com 
+ex- shreya1@gmail.com
+output - shreya1 
+
+captcha in js with math function
+captcha with numeric or alphanumeric
+check captcha with validation 

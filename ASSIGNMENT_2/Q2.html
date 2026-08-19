@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Second Largest</title>
+</head>
+<body>
+
+<script>
+
+function secondLargest(numberArray) {
+
+    let largestNumber = numberArray[0];
+    let secondLargestNumber = numberArray[0];
+
+    for (let i = 1; i < numberArray.length; i++) {
+
+        if (numberArray[i] > largestNumber) {
+            secondLargestNumber = largestNumber;
+            largestNumber = numberArray[i];
+        }
+        else if (numberArray[i] > secondLargestNumber && numberArray[i] != largestNumber) {
+            secondLargestNumber = numberArray[i];
+        }
+
+    }
+
+    return secondLargestNumber;
+}
+
+let numbers = [12, 45, 78, 23, 67];
+
+console.log(secondLargest(numbers));
+
+</script>
+
+</body>
+</html>

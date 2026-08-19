@@ -1,0 +1,26 @@
+1. diff btewwn java and javascript
+
+2. why java is not pure object oriented programming language 
+
+3. OOP is most imp for interview 
+
+4. new key word how it works 
+
+5. callback function
+
+object -> built in [array, string,math,date, boolean and regexp, number  function - camelcase, object - initcap, object - initcap]
+       -> userdefined
+
+array - is an object - colletion of values all datatype 
+property - length
+functions - 
+
+push
+pop
+slice
+splice - insert or delete in between array
+es6 functions
+
+string - 
+split
+

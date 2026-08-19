@@ -1,0 +1,11 @@
+fs
+fs with promise
+stream
+command line arguments
+custom event
+
+
+npm i - will create node_module folder with the dependencies mention in package.lock.json file
+
+by default all function run asynchrounus so it will return "promise" only
+

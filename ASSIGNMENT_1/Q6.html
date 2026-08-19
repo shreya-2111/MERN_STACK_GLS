@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Divisible Message</title>
+</head>
+<body>
+
+<button onclick="printMessage()">Print Message</button>
+
+<p id="output"></p>
+
+<script>
+
+function printMessage() {
+
+    let message = "";
+
+    for (let currentNumber = 1; currentNumber <= 100; currentNumber++) {
+
+        if (currentNumber % 3 == 0 && currentNumber % 5 == 0) {
+            message += currentNumber + " : Number is divisible by 3 and 5 both <br>";
+        }
+        else if (currentNumber % 3 == 0) {
+            message += currentNumber + " : Number is divisible by 3 <br>";
+        }
+        else if (currentNumber % 5 == 0) {
+            message += currentNumber + " : Number is divisible by 5 <br>";
+        }
+
+    }
+
+    document.getElementById("output").innerHTML = message;
+
+}
+
+</script>
+
+</body>
+</html>

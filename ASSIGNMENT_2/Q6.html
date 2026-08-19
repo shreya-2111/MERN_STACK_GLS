@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Hex Color</title>
+</head>
+<body>
+
+<button onclick="changeBackgroundColor()">Change Background</button>
+
+<script>
+
+function generateRandomHexColor() {
+
+    let colorLetters = "0123456789ABCDEF";
+
+    let hexColor = "#";
+
+    for (let i = 0; i < 6; i++) {
+
+        let randomIndex = Math.floor(Math.random() * 16);
+
+        hexColor = hexColor + colorLetters[randomIndex];
+
+    }
+
+    return hexColor;
+}
+
+function changeBackgroundColor() {
+
+    let randomColor = generateRandomHexColor();
+
+    document.body.style.backgroundColor = randomColor;
+
+}
+
+</script>
+
+</body>
+</html>

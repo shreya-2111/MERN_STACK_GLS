@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Odd Numbers</title>
+</head>
+<body>
+
+<script>
+
+function generateOddNumbers(totalNumbers) {
+
+    let oddNumberArray = [];
+    let currentOdd = 1;
+
+    for (let i = 0; i < totalNumbers; i++) {
+
+        oddNumberArray.push(currentOdd);
+        currentOdd = currentOdd + 2;
+
+    }
+
+    return oddNumberArray;
+}
+
+console.log(generateOddNumbers(5));
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Square and Cube</title>
+</head>
+<body>
+
+<h2>Square and Cube</h2>
+
+<input type="number" id="number" placeholder="Enter Number">
+
+<br><br>
+
+<button onclick="findSquare()">SQUARE</button>
+<button onclick="findCube()">CUBE</button>
+
+<script>
+function findSquare() {
+    let enteredNumber = Number(document.getElementById("number").value);
+    let square = enteredNumber * enteredNumber;
+    alert("Square of " + enteredNumber + " is " + square);
+}
+
+function findCube() {
+    let enteredNumber = Number(document.getElementById("number").value);
+    let cube = enteredNumber * enteredNumber * enteredNumber;
+    alert("Cube of " + enteredNumber + " is " + cube);
+}
+</script>
+
+</body>
+</html>

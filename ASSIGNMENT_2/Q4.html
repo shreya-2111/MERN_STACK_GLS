@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Vowels</title>
+</head>
+<body>
+
+<script>
+
+function countVowels(text) {
+
+    let vowelCount = 0;
+
+    let lowerCaseText = text.toLowerCase();
+
+    for (let i = 0; i < lowerCaseText.length; i++) {
+
+        let currentLetter = lowerCaseText[i];
+
+        if (
+            currentLetter == "a" ||
+            currentLetter == "e" ||
+            currentLetter == "i" ||
+            currentLetter == "o" ||
+            currentLetter == "u"
+        ) {
+            vowelCount++;
+        }
+
+    }
+
+    return vowelCount;
+}
+
+console.log(countVowels("Hello World"));
+
+</script>
+
+</body>
+</html>

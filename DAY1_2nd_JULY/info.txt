@@ -1,0 +1,23 @@
+everything in js in object.
+js is object based scripting languange.
+
+TASK - 
+button - click - alert msg (use window.alert function or alert function )  
+
+buttons type = button , reset , submit  
+
+window.confirm() or confirm() = ok(true) and cancle(false)
+
+
+all function are in camel case
+
+
+run cmmnd for nodejs : 
+node filename.js
+
+console -
+document.getElementById("num2").value
+'2'
+
+document.getElementById("num2").getAttribute("value")
+'2'

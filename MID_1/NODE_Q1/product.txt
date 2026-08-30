@@ -1,0 +1,8 @@
+
+    Laptop - 50000
+    Mobile - 20000
+    Keyboard - 1500
+    Mouse - 800
+    Headphones - 2500
+    
+ Monitor - 10000
